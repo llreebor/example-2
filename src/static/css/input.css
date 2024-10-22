@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.container {
+		@apply max-w-[1440px] px-8 sm:px-4;
+	}
+	h2 {
+		@apply font-ptSerif text-[32px] font-bold leading-[1.1] text-primary transition-colors group-hover:text-secondary-hovered;
+	}
+	h3 {
+		@apply font-ptSerif text-2xl font-bold leading-[1.1] text-primary transition-colors group-hover:text-secondary-hovered;
+	}
+	h4 {
+		@apply font-ptSerif text-xl font-bold  text-primary transition-colors group-hover:text-secondary-hovered;
+	}
+	h5 {
+		@apply font-ptSerif text-lg font-bold  text-primary transition-colors group-hover:text-secondary-hovered;
+	}
+	h6 {
+		@apply font-ptSerif text-base font-bold  text-primary transition-colors group-hover:text-secondary-hovered;
+	}
+	p {
+		@apply text-[#7E7E7E] transition-colors group-hover:text-primary;
+	}
+}
+
+@layer utilities {
+	#header.active {
+		@apply fixed left-0 top-0 right-0 transition-transform;
+	}
+}
+
+/* Swiper  */
+.swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	background: #d9d9d9;
+}
+.swiper-pagination-bullet-active {
+	background: #ee6c4d;
+}
+.swiper-button-disabled rect {
+	fill: transparent;
+	stroke: #7e7e7e;
+	stroke-width: 4px;
+}
+.swiper-button-disabled path {
+	stroke: #7e7e7e;
+}

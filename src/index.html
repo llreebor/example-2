@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Example by Roman T.</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter&family=PT+Serif:wght@400;700&family=Sofia+Sans:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./static/css/output.css" />
+	</head>
+
+	<body class="relative h-full bg-[#FBFBFB] font-sofiaSans">
+		<div class="wrapper flex min-h-full flex-col">
+			<!-- Header -->
+			<header id="header" class="relative z-20 bg-primary transition-all">
+				<div class="container">
+					<div class="flex items-center justify-between py-5 lg:justify-start">
+						<a href=" #" class="flex">
+							<img
+								src="./static/img/logo.svg"
+								class="sm:max-w-[100px]"
+								alt="logo"
+							/>
+						</a>
+						<!-- Desktop menu -->
+						<ul
+							id="menu"
+							class="z-10 flex animate-fadeIn items-center gap-[18px] lg:hidden"
+						>
+							<!-- Menu Item With Submenu -->
+							<li class="group">
+								<a
+									href="#"
+									class="relative flex items-center gap-2 border-r-[1px] border-r-[#7E7E7E] pr-[18px] text-[#F8F9FA] after:absolute after:-bottom-0 after:right-[18px] after:left-0 after:h-[2px] after:scale-0 after:bg-secondary after:transition-transform group-hover:after:scale-100"
+								>
+									<span>News</span>
+									<img
+										class="transition-transform group-hover:rotate-180"
+										src="./static/img/menu-arrow.svg"
+										alt="menu-arrow"
+									/>
+								</a>
+
+								<!-- Sumbenu -->
+								<ul
+									class="absolute top-20 left-0 hidden w-full animate-fadeIn grid-cols-5 gap-6 border border-gray-100 bg-[#CCE2FF] p-8 shadow-sm before:absolute before:-top-[29px] before:left-0 before:h-10 before:w-full before:bg-transparent group-hover:grid"
+								>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-1.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Editor’s picks</span
+											>
+										</a>
+									</li>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-2.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Suppliers’ News</span
+											>
+										</a>
+									</li>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-3.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Reports</span
+											>
+										</a>
+									</li>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-4.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Event News</span
+											>
+										</a>
+									</li>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-5.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Farming News</span
+											>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									href="#"
+									class="relative border-r-[1px] border-r-[#7E7E7E] pr-[18px] text-[#F8F9FA] after:absolute after:-bottom-1 after:right-[18px] after:left-0 after:h-[2px] after:scale-0 after:bg-secondary after:transition-transform hover:after:scale-100"
+								>
+									<span>Products</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									href="#"
+									class="relative border-r-[1px] border-r-[#7E7E7E] pr-[18px] text-[#F8F9FA] after:absolute after:-bottom-1 after:right-[18px] after:left-0 after:h-[2px] after:scale-0 after:bg-secondary after:transition-transform hover:after:scale-100"
+								>
+									<span>Commodities</span>
+								</a>
+							</li>
+							<!-- Menu Item With Submenu -->
+							<li class="group">
+								<a
+									href="#"
+									class="relative flex items-center gap-2 border-r-[1px] border-r-[#7E7E7E] pr-[18px] text-[#F8F9FA] after:absolute after:-bottom-0 after:right-[18px] after:left-0 after:h-[2px] after:scale-0 after:bg-secondary after:transition-transform group-hover:after:scale-100"
+								>
+									<span>Regions</span>
+									<img
+										class="transition-transform group-hover:rotate-180"
+										src="./static/img/menu-arrow.svg"
+										alt="menu-arrow"
+									/>
+								</a>
+
+								<!-- Sumbenu -->
+								<ul
+									class="absolute top-20 left-0 hidden w-full animate-fadeIn grid-cols-5 gap-6 border border-gray-100 bg-[#CCE2FF] p-8 shadow-sm before:absolute before:-top-[29px] before:left-0 before:h-10 before:w-full before:bg-transparent group-hover:grid"
+								>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-1.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Editor’s picks</span
+											>
+										</a>
+									</li>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-2.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Suppliers’ News</span
+											>
+										</a>
+									</li>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-3.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Reports</span
+											>
+										</a>
+									</li>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-4.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Event News</span
+											>
+										</a>
+									</li>
+									<li>
+										<a class="group/item shrink-1 flex flex-col" href="#">
+											<img
+												src="./static/img/submenu-item-5.png"
+												alt="submenu-item-image"
+												class="h-auto w-full max-w-full"
+											/>
+											<hr class="mt-3 w-full border-primary bg-primary" />
+											<span
+												class="mt-1 font-black transition-colors group-hover/item:text-secondary"
+												>Farming News</span
+											>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									href="#"
+									class="relative border-r-[1px] border-r-[#7E7E7E] pr-[18px] text-[#F8F9FA] after:absolute after:-bottom-1 after:right-[18px] after:left-0 after:h-[2px] after:scale-0 after:bg-secondary after:transition-transform hover:after:scale-100"
+								>
+									<span>Resources</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									href="#"
+									class="relative border-r-[1px] border-r-[#7E7E7E] pr-[18px] text-[#F8F9FA] after:absolute after:-bottom-1 after:right-[18px] after:left-0 after:h-[2px] after:scale-0 after:bg-secondary after:transition-transform hover:after:scale-100"
+								>
+									<span>Buyers’ guide</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									href="#"
+									class="relative border-r-[1px] border-r-[#7E7E7E] pr-[18px] text-[#F8F9FA] after:absolute after:-bottom-1 after:right-[18px] after:left-0 after:h-[2px] after:scale-0 after:bg-secondary after:transition-transform hover:after:scale-100"
+								>
+									<span>Job board</span>
+								</a>
+							</li>
+							<!-- Menu Item -->
+							<li>
+								<a
+									href="#"
+									class="relative border-r-[1px] border-r-[#7E7E7E] pr-[18px] text-[#F8F9FA] after:absolute after:-bottom-1 after:right-[18px] after:left-0 after:h-[2px] after:scale-0 after:bg-secondary after:transition-transform hover:after:scale-100"
+								>
+									<span>Magazine</span>
+								</a>
+							</li>
+						</ul>
+
+						<!-- Mobile menu -->
+						<ul
+							id="mobile-menu"
+							class="fixed left-0 right-0 top-0 bottom-0 z-10 hidden h-screen w-screen flex-col items-center justify-center gap-10 overflow-auto bg-primary py-10"
+						>
+							<!-- Menu Item With Submenu -->
+							<li
+								class="with-submenu relative text-2xl text-white transition-colors"
+							>
+								<div class="flex flex-col items-center gap-2">
+									<div class="flex justify-between gap-2">
+										<span class="submenu-trigger">News</span>
+										<img
+											class="submenu-icon transition-transform group-hover:rotate-180"
+											src="./static/img/menu-arrow.svg"
+											alt="img"
+										/>
+									</div>
+
+									<ul class="submenu hidden flex-col justify-center gap-2">
+										<li>
+											<a
+												class="text-xl text-secondary"
+												href="https://www.google.com/"
+												>News 1</a
+											>
+										</li>
+										<li>
+											<a
+												class="text-xl text-secondary"
+												href="https://www.google.com/"
+												>News 2</a
+											>
+										</li>
+										<li>
+											<a
+												class="text-xl text-secondary"
+												href="https://www.google.com/"
+												>News 3</a
+											>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li>
+								<a href="#" class="text-2xl text-white"> Products </a>
+							</li>
+							<li>
+								<a href="#" class="text-2xl text-white"> Commodities </a>
+							</li>
+
+							<!-- Menu Item With Submenu -->
+							<li
+								class="with-submenu relative text-2xl text-white transition-colors"
+							>
+								<div class="flex flex-col items-center gap-2">
+									<div class="flex justify-between gap-2">
+										<span class="submenu-trigger">Regions</span>
+										<img
+											class="submenu-icon transition-transform group-hover:rotate-180"
+											src="./static/img/menu-arrow.svg"
+											alt="img"
+										/>
+									</div>
+
+									<ul class="submenu hidden flex-col justify-center gap-2">
+										<li>
+											<a
+												class="text-xl text-secondary"
+												href="https://www.google.com/"
+												>Region 1</a
+											>
+										</li>
+										<li>
+											<a
+												class="text-xl text-secondary"
+												href="https://www.google.com/"
+												>Region 2</a
+											>
+										</li>
+										<li>
+											<a
+												class="text-xl text-secondary"
+												href="https://www.google.com/"
+												>Region 3</a
+											>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li>
+								<a href="#" class="text-2xl text-white"> Resources </a>
+							</li>
+
+							<li>
+								<a href="#" class="text-2xl text-white"> Buyers’ guide </a>
+							</li>
+							<li>
+								<a href="#" class="text-2xl text-white"> Job board </a>
+							</li>
+							<li>
+								<a href="#" class="text-2xl text-white"> Magazine </a>
+							</li>
+						</ul>
+
+						<!-- Header Actions Buttons -->
+						<div
+							class="flex items-center gap-3 lg:ml-auto lg:mr-5 sm:mr-2 sm:gap-2"
+						>
+							<a
+								href="#"
+								class="inline-block rounded bg-secondary py-[5px] px-4 text-white transition-colors hover:bg-secondary-hovered sm:py-1"
+								>Subscribe</a
+							>
+							<button
+								class="inline-flex items-center justify-center rounded bg-[#1E3D66] py-1 px-2 transition-colors hover:bg-primary-hovered sm:p-1"
+							>
+								<svg
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M15.5 14.5H14.71L14.43 14.23C15.4439 13.054 16.0011 11.5527 16 10C16 8.71442 15.6188 7.45772 14.9046 6.3888C14.1903 5.31988 13.1752 4.48676 11.9874 3.99479C10.7997 3.50282 9.49279 3.37409 8.23192 3.6249C6.97104 3.8757 5.81285 4.49477 4.90381 5.40381C3.99477 6.31285 3.3757 7.47104 3.1249 8.73192C2.87409 9.99279 3.00282 11.2997 3.49479 12.4874C3.98676 13.6752 4.81988 14.6903 5.8888 15.4046C6.95772 16.1188 8.21442 16.5 9.5 16.5C11.11 16.5 12.59 15.91 13.73 14.93L14 15.21V16L19 20.99L20.49 19.5L15.5 14.5ZM9.5 14.5C7.01 14.5 5 12.49 5 10C5 7.51 7.01 5.5 9.5 5.5C11.99 5.5 14 7.51 14 10C14 12.49 11.99 14.5 9.5 14.5Z"
+										fill="white"
+									/>
+								</svg>
+							</button>
+						</div>
+
+						<!-- Burger Button -->
+						<button
+							id="burger"
+							class="group relative z-20 hidden h-5 w-[30px] lg:block"
+						>
+							<span
+								class="absolute left-0 top-0 flex h-[2px] w-[30px] bg-secondary transition-transform group-[.active]:translate-y-2 group-[.active]:rotate-45 group-[.active]:bg-white"
+							></span>
+							<span
+								class="absolute left-0 top-1/2 flex h-[2px] w-[30px] translate-x-0 -translate-y-1/2 bg-secondary transition-transform group-[.active]:opacity-0"
+							></span>
+							<span
+								class="absolute left-0 bottom-0 flex h-[2px] w-[30px] bg-secondary transition-transform group-[.active]:-translate-y-[10px] group-[.active]:-rotate-45 group-[.active]:bg-white"
+							></span>
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<!-- Section 1 (Hero) -->
+				<section class="pt-8 sm:pt-4">
+					<div class="container">
+						<hr class="border-[#101010]" />
+						<span class="mt-1 font-black text-[#101010]">News</span>
+
+						<!-- First row -->
+
+						<div class="mt-4 grid grid-cols-2 gap-3 md:grid-cols-1 md:gap-6">
+							<a href="#" class="group">
+								<img
+									src="./static/img/main-img-large.jpg"
+									alt="img"
+									class="mb-4 h-auto w-full max-w-full rounded-sm object-cover"
+								/>
+
+								<div class="mb-1">
+									<span class="text-sm text-secondary">Event News</span>
+									<time class="text-sm text-[#7E7E7E]">
+										<span class="mx-1 text-primary">|</span> September 7,
+										2023</time
+									>
+								</div>
+
+								<h2>
+									First steps agreed in the creation of a Global Shrimp Council
+									to boost worldwide consumption
+								</h2>
+								<p class="mt-3">
+									The organization aims to be producer-driven and could be
+									established within the National Fisheries Institute (NFI) in
+									the US.
+								</p>
+							</a>
+							<div
+								class="md:border-left-0 grid gap-[10px] border-l border-l-[#D9D9D9] border-t-[#D9D9D9] pt-[10px] pl-3 md:border-none md:pl-0"
+							>
+								<a
+									class="group grid grid-cols-2 gap-6 md:border-t md:border-t-[#D9D9D9] md:pt-[10px] sm:grid-cols-1"
+									href="#"
+								>
+									<div>
+										<div
+											class="mb-2 flex max-w-fit items-center gap-2 rounded-[100px] bg-[#F5F4EF] py-1 px-2"
+										>
+											<img src="./static/img/star.svg" alt="star" />
+											<span class="text-sm font-black">Sponsored post</span>
+										</div>
+										<div class="mb-1">
+											<span class="text-sm text-secondary"
+												>Suppliers´ News</span
+											>
+											<time class="text-sm text-[#7E7E7E]">
+												<span class="mx-1 text-primary">|</span> September 6,
+												2023</time
+											>
+										</div>
+										<h3>
+											First steps agreed in the creation of a Global Shrimp
+											Council to boost worldwide consumption
+										</h3>
+										<p class="mt-4">
+											The organization aims to be producer-driven and could be
+											established within the National Fisheries Institute (NFI)
+											in the US.
+										</p>
+									</div>
+									<div class="flex">
+										<img
+											class="h-auto w-full max-w-full rounded-sm object-cover"
+											src="./static/img/subnews-main-1.jpg"
+											alt="img"
+										/>
+									</div>
+								</a>
+								<a
+									class="group grid grid-cols-2 gap-6 border-t border-t-[#D9D9D9] pt-[10px] sm:grid-cols-1"
+									href="#"
+								>
+									<div>
+										<div class="mb-1">
+											<span class="text-sm text-secondary"
+												>Suppliers´ News</span
+											>
+											<time class="text-sm text-[#7E7E7E]">
+												<span class="mx-1 text-primary">|</span> September 6,
+												2023</time
+											>
+										</div>
+										<h3>
+											FAI Farms unveils shrimp welfare website and online
+											training course
+										</h3>
+										<p class="mt-4">
+											The site features FAI’s welfare assessment protocol and
+											its first online training course on shrimp welfare.
+										</p>
+									</div>
+									<div class="flex">
+										<img
+											src="./static/img/subnews-main-2.jpg"
+											class="h-auto w-full max-w-full rounded-sm object-cover"
+											alt="img"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!-- Second row -->
+						<div
+							class="mt-10 grid grid-cols-2 gap-3 md:mt-5 md:grid-cols-1 md:gap-6"
+						>
+							<div class="grid grid-cols-2 gap-3 xs:grid-cols-1">
+								<a href="#" class="group xs:flex xs:flex-col-reverse">
+									<img
+										src="./static/img/subnews-main-3.jpg"
+										alt="img"
+										class="mb-3 h-auto w-full max-w-full rounded-sm object-cover"
+									/>
+									<div class="mb-1">
+										<span class="text-sm text-secondary">News</span>
+										<time class="text-sm text-[#7E7E7E]">
+											<span class="mx-1 text-primary">|</span> September 6,
+											2023</time
+										>
+									</div>
+									<h4>
+										F3 Krill Replacement Challenge: A palatable protein
+										ingredient
+									</h4>
+								</a>
+								<a href="#" class="group xs:flex xs:flex-col-reverse">
+									<img
+										src="./static/img/subnews-main-4.jpg"
+										alt="img"
+										class="mb-3 h-auto w-full max-w-full rounded-sm object-cover"
+									/>
+									<div class="mb-1">
+										<span class="text-sm text-secondary">Suppliers´ News</span>
+										<time class="text-sm text-[#7E7E7E]">
+											<span class="mx-1 text-primary">|</span> September 6,
+											2023</time
+										>
+									</div>
+									<h4>
+										ViAqua Therapeutics completes $8.25 million investment to
+										scale RNA-based solutions in aquaculture
+									</h4>
+								</a>
+							</div>
+							<div>
+								<div
+									class="grid grid-cols-2 gap-3 border-l border-l-[#D9D9D9] pl-3 md:border-none md:pl-0 xs:grid-cols-1"
+								>
+									<a href="#" class="group xs:flex xs:flex-col-reverse">
+										<img
+											src="./static/img/subnews-main-5.jpg"
+											alt="img"
+											class="mb-3 h-auto w-full max-w-full rounded-sm object-cover"
+										/>
+										<div class="mb-1">
+											<span class="text-sm text-secondary">Commodity News</span>
+											<time class="text-sm text-[#7E7E7E]">
+												<span class="mx-1 text-primary">|</span> September 6,
+												2023</time
+											>
+										</div>
+										<h4>
+											EFFOP submits data on PFAS to EFSA, lays the ground for
+											future risk management strategies
+										</h4>
+									</a>
+									<div class="flex flex-col gap-[10px] bg-[#F5F4EF] p-3">
+										<a
+											href="#"
+											class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+										>
+											<div class="mb-1">
+												<span class="text-sm text-secondary"
+													>Suppliers´ News</span
+												>
+												<time class="text-sm text-[#7E7E7E]">
+													<span class="mx-1 text-primary">|</span> September 6,
+													2023</time
+												>
+											</div>
+											<h6>Last call to join AquaSpeech workshop</h6>
+										</a>
+										<a
+											href="#"
+											class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+										>
+											<div class="mb-1">
+												<span class="text-sm text-secondary"
+													>Suppliers´ News</span
+												>
+												<time class="text-sm text-[#7E7E7E]">
+													<span class="mx-1 text-primary">|</span> September 6,
+													2023</time
+												>
+											</div>
+											<h6>
+												IFFO unveils its annual conference’s detailed agenda
+											</h6>
+										</a>
+										<a
+											href="#"
+											class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+										>
+											<div class="mb-1">
+												<span class="text-sm text-secondary"
+													>Suppliers´ News</span
+												>
+												<time class="text-sm text-[#7E7E7E]">
+													<span class="mx-1 text-primary">|</span> September 6,
+													2023</time
+												>
+											</div>
+											<h6>
+												Grupo Almar, dsm-firmenich join forces for sustainable
+												shrimp farming
+											</h6>
+										</a>
+
+										<!-- ADS -->
+										<a
+											href="#"
+											class="flex flex-col items-center justify-center"
+										>
+											<img
+												class="h-[100px] w-full rounded-sm object-cover"
+												src="./static/img/smaill-ads.jpg"
+												alt="ads"
+											/>
+											<span
+												class="mt-2 text-center font-inter text-xs uppercase tracking-[0.64px] text-[#595959]"
+												>Advertisement</span
+											>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Large ADS -->
+				<section class="my-6">
+					<div class="container">
+						<div class="border-y border-y-[#EAEAEA] py-6">
+							<div class="mx-auto max-w-[970px]">
+								<a href="#" class="flex flex-col items-center justify-center">
+									<img
+										class="h-[150px] w-full rounded-sm object-cover"
+										src="./static/img/smaill-ads.jpg"
+										alt="ads"
+									/>
+									<span
+										class="mt-2 text-center font-inter text-xs uppercase tracking-[0.64px] text-[#595959]"
+										>Advertisement</span
+									>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 2 (Just News)  -->
+				<section>
+					<div class="container">
+						<div class="flex justify-between gap-3 md:flex-col md:gap-10">
+							<a
+								href="#"
+								class="group flex max-w-[560px] grow flex-col md:max-w-full"
+							>
+								<img
+									src="./static/img/section-2-large.jpg"
+									alt="img"
+									class="mb-4 h-auto w-full max-w-full rounded-sm object-cover"
+								/>
+
+								<div class="mb-1">
+									<span class="text-sm text-secondary">Event News</span>
+									<time class="text-sm text-[#7E7E7E]">
+										<span class="mx-1 text-primary">|</span> September 7,
+										2023</time
+									>
+								</div>
+
+								<h2>
+									Big data partnership reveals benefits of omega-3s in Norwegian
+									salmon farming
+								</h2>
+								<p class="mt-3">
+									Veramaris’ partnership with Manolin revealed the meaningful
+									benefits of higher dietary EPA and DHA levels on biological
+									performance and harvest quality.
+								</p>
+							</a>
+							<div
+								class="flex grow flex-col gap-[10px] border-l border-l-[#D9D9D9] pl-3 md:border-none md:pl-0"
+							>
+								<a
+									href="#"
+									class="group grid grid-cols-4 gap-6 border-b border-b-[#D9D9D9] pb-[10px] last:border-none md:grid-cols-2 xs:grid-cols-1"
+								>
+									<div class="col-span-3 md:col-span-1">
+										<div class="mb-1">
+											<span class="text-sm text-secondary">News</span>
+											<time class="text-sm text-[#7E7E7E]">
+												<span class="mx-1 text-primary">|</span> September 6,
+												2023</time
+											>
+										</div>
+										<h3>
+											UK consumers are attracted by flavor and taste of salmon
+											fed Arbiom´s protein
+										</h3>
+										<p class="mt-4">
+											Sixty-eight percent of UK consumers are willing to buy
+											salmon fed with Sylpro® and find it as tasty as salmon fed
+											with a standard diet
+										</p>
+									</div>
+									<div class="flex">
+										<img
+											src="./static/img/section-2-small-1.jpg"
+											alt="img"
+											class="h-auto w-full max-w-full rounded-sm object-cover"
+										/>
+									</div>
+								</a>
+								<a
+									href="#"
+									class="group grid grid-cols-4 gap-6 border-b border-b-[#D9D9D9] pb-[10px] last:border-none md:grid-cols-2 xs:grid-cols-1"
+								>
+									<div class="col-span-3 md:col-span-1">
+										<div class="mb-1">
+											<span class="text-sm text-secondary">News</span>
+											<time class="text-sm text-[#7E7E7E]">
+												<span class="mx-1 text-primary">|</span> September 6,
+												2023</time
+											>
+										</div>
+										<h3>
+											Grupo Almar, dsm-firmenich join forces for sustainable
+											shrimp farming
+										</h3>
+										<p class="mt-4">
+											The company hosted a seminar at TARS in Bali that brought
+											together about 80 online and onsite participants from all
+											over Asia.
+										</p>
+									</div>
+									<div class="flex">
+										<img
+											src="./static/img/section-2-small-2.jpg"
+											alt="img"
+											class="h-auto w-full max-w-full rounded-sm object-cover"
+										/>
+									</div>
+								</a>
+								<a
+									href="#"
+									class="group grid grid-cols-4 gap-6 border-b border-b-[#D9D9D9] pb-[10px] last:border-none md:grid-cols-2 xs:grid-cols-1"
+								>
+									<div class="col-span-3 md:col-span-1">
+										<div class="mb-1">
+											<span class="text-sm text-secondary">News</span>
+											<time class="text-sm text-[#7E7E7E]">
+												<span class="mx-1 text-primary">|</span> September 6,
+												2023</time
+											>
+										</div>
+										<h3>Hamlet Protein appoints commercial director</h3>
+										<p class="mt-4">
+											Simon Martyn will drive the company´s ambitious growth
+											agenda.
+										</p>
+									</div>
+									<div class="flex">
+										<img
+											src="./static/img/section-2-small-3.jpg"
+											alt="img"
+											class="h-auto w-full max-w-full rounded-sm object-cover"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Large ADS -->
+				<section class="my-6">
+					<div class="container">
+						<div class="border-y border-y-[#EAEAEA] py-6">
+							<div class="mx-auto max-w-[970px]">
+								<a href="#" class="flex flex-col items-center justify-center">
+									<img
+										class="h-[150px] w-full rounded-sm object-cover"
+										src="./static/img/smaill-ads.jpg"
+										alt="ads"
+									/>
+									<span
+										class="mt-2 text-center font-inter text-xs uppercase tracking-[0.64px] text-[#595959]"
+										>Advertisement</span
+									>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 3 (Highlights) -->
+				<section class="bg-primary py-20 md:py-10">
+					<div class="container">
+						<hr class="border-white" />
+						<span class="mt-1 font-black text-white">Highlights</span>
+
+						<div
+							class="mt-4 grid grid-cols-3 gap-6 md:grid-cols-2 sm:grid-cols-1"
+						>
+							<a href="#" class="group flex grow flex-col">
+								<img
+									src="./static/img/highlights-1.jpg"
+									alt="img"
+									class="mb-4 h-auto w-full max-w-full rounded-sm object-cover"
+								/>
+
+								<div class="mb-1">
+									<span class="text-sm text-secondary">Suppliers´ News</span>
+									<time class="text-sm text-[#D9D9D9]">
+										<span class="mx-1 text-[#D9D9D9]">|</span> September 7,
+										2023</time
+									>
+								</div>
+
+								<h2 class="text-white">F3 Krill Replacement Challenge</h2>
+								<p class="mt-3 text-[#D9D9D9] group-hover:text-white">
+									A new contest to innovate a fish oil alternative that doesn’t
+									rely on wild-caught fish officially launched this week.
+								</p>
+							</a>
+
+							<a href="#" class="group flex grow flex-col">
+								<img
+									src="./static/img/highlights-2.jpg"
+									alt="img"
+									class="mb-4 flex h-auto w-full max-w-full rounded-sm object-cover"
+								/>
+
+								<div class="mb-1">
+									<span class="text-sm text-secondary">Suppliers´ News</span>
+									<time class="text-sm text-[#D9D9D9]">
+										<span class="mx-1 text-[#D9D9D9]">|</span> September 7,
+										2023</time
+									>
+								</div>
+
+								<h2 class="text-white">
+									Cargill reports continued progress on its path to
+									sustainability
+								</h2>
+								<p class="mt-3 text-[#D9D9D9] group-hover:text-white">
+									In a recent interview, the company highlighted a reduction of
+									the carbon footprint through the value chain, sourcing
+									sustainable and alternative feed ingredients and supporting
+									farmers as some of the key highlights of its sustainability
+									improvements.
+								</p>
+							</a>
+
+							<a
+								href="#"
+								class="group flex grow flex-col md:col-span-2 sm:col-span-1"
+							>
+								<img
+									src="./static/img/highlights-3.jpg"
+									alt="img"
+									class="mb-4 flex h-auto w-full max-w-full rounded-sm object-cover"
+								/>
+
+								<div class="mb-1">
+									<span class="text-sm text-secondary">Suppliers´ News</span>
+									<time class="text-sm text-[#D9D9D9]">
+										<span class="mx-1 text-[#D9D9D9]">|</span> September 7,
+										2023</time
+									>
+								</div>
+
+								<h2 class="text-white">
+									F3 Krill Replacement Challenge: A mix of microalgae
+								</h2>
+								<p class="mt-3 text-[#D9D9D9] group-hover:text-white">
+									India-based company, Shaivaa Algaetech, has registered with a
+									product that combines two essential omega-3 fatty acids – EPA
+									and DHA – and astaxanthin.
+								</p>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 4 (Featured Video) -->
+				<section class="py-20 md:py-10">
+					<div class="container">
+						<hr class="border-[#101010]" />
+						<span class="mt-1 font-black text-[#101010]">Featured Video</span>
+
+						<div class="mt-4 grid grid-cols-2 gap-6 md:grid-cols-1">
+							<div>
+								<iframe
+									class="aspect-video h-full w-full"
+									src="https://www.youtube.com/embed/5ItE7zrMJWs?si=xKJeZ769dTDcOk_0"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen
+								></iframe>
+							</div>
+							<div>
+								<h2>
+									FOCUS ON AQUALYSO: Interviewing the team behind the Service
+									Platform on Aquaculture Nutrition
+								</h2>
+								<div class="mt-6 grid gap-6 md:gap-4">
+									<p class="italic">
+										Through a set of interviews, Adisseo explains the uniqueness
+										of Aqualyso, a digestive and metabolic enhancer based on
+										lysophospholipids that has been specifically developed for
+										aquaculture applications.
+									</p>
+									<p>
+										The team interviewed is supporting the Service Platform on
+										Aquaculture Nutrition, including
+										<a href="#" class="font-bold text-primary"
+											>Dr. Waldo Nuez, Global R&D manager aquaculture</a
+										>
+										<a href="#" class="font-bold text-primary">
+											Marleen Dehasque, Global Product Manager Aquaculture
+											Nutrition,</a
+										>
+										and
+										<a href="#" class="font-bold text-primary"
+											>Martin Guerin, Regional Technical Manager Aquaculture
+											APAC/ISC.</a
+										>
+									</p>
+									<p>
+										At Adisseo, we understand that aquaculture is a young and
+										dynamic industry. The success of our customers depends on
+										their ability to respond quickly to their daily challenges.
+										That is why we work alongside our customers to optimize the
+										application of our products. Our species-specific services
+										are organized through a global service platform where
+										field-experienced professionals from around the globe share
+										their experiences to provide practical solutions to both
+										aquafeed producers as well as fish and shrimp integrators.
+										For more information on the
+										<a href="#" class="font-bold text-primary">
+											Service Platform on Aquaculture Nutrition</a
+										>
+										click on the link below.
+									</p>
+
+									<a
+										href="#"
+										class="flex items-center gap-3 text-black transition-colors hover:text-secondary"
+									>
+										<span class="bg-white">
+											<img src="./static/img/link-arrow.svg" alt="img" />
+										</span>
+
+										<span class="font-bold">More info about this video</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 5 (News) -->
+				<section class="pb-20 md:pb-10">
+					<div class="container">
+						<div
+							class="grid grid-cols-4 items-start gap-6 lg:grid-cols-2 xs:grid-cols-1"
+						>
+							<!-- News Item -->
+							<div class="grid">
+								<hr class="border-[#101010]" />
+								<span class="mt-1 font-black text-[#101010]">
+									Featured Video
+								</span>
+
+								<img
+									src="./static/img/news-1.jpg"
+									alt="img"
+									class="mb-4 h-auto w-full max-w-full object-cover"
+								/>
+
+								<div class="grid gap-3">
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											AFIA working toward healthier world through advanced
+											animal nutrition
+										</h6>
+									</a>
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											Portuguese are willing to pay more for fish enriched with
+											omega-3
+										</h6>
+									</a>
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											dsm-firmenich reports mycotoxin survey for first half 2023
+										</h6>
+									</a>
+								</div>
+
+								<a
+									href="#"
+									class="flex items-center gap-2 border-t border-t-[#7E7E7E] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+								>
+									<span>More Reports </span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="6"
+										height="10"
+										viewBox="0 0 6 10"
+										fill="none"
+									>
+										<path d="M1 9L5 5L1 1" stroke="black" />
+									</svg>
+								</a>
+							</div>
+							<!-- News Item -->
+							<div class="grid">
+								<hr class="border-[#101010]" />
+								<span class="mt-1 font-black text-[#101010]"> Event News </span>
+
+								<img
+									src="./static/img/news-2.jpg"
+									alt="img"
+									class="mb-4 h-auto w-full max-w-full object-cover"
+								/>
+
+								<div class="grid gap-3">
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											AFIA working toward healthier world through advanced
+											animal nutrition
+										</h6>
+									</a>
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											Portuguese are willing to pay more for fish enriched with
+											omega-3
+										</h6>
+									</a>
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											dsm-firmenich reports mycotoxin survey for first half 2023
+										</h6>
+									</a>
+								</div>
+
+								<a
+									href="#"
+									class="flex items-center gap-2 border-t border-t-[#7E7E7E] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+								>
+									<span>More Reports </span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="6"
+										height="10"
+										viewBox="0 0 6 10"
+										fill="none"
+									>
+										<path d="M1 9L5 5L1 1" stroke="black" />
+									</svg>
+								</a>
+							</div>
+							<!-- News Item -->
+							<div class="grid">
+								<hr class="border-[#101010]" />
+								<span class="mt-1 font-black text-[#101010]">
+									Farming News
+								</span>
+
+								<img
+									src="./static/img/news-3.jpg"
+									alt="img"
+									class="mb-4 h-auto w-full max-w-full object-cover"
+								/>
+
+								<div class="grid gap-3">
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											AFIA working toward healthier world through advanced
+											animal nutrition
+										</h6>
+									</a>
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											Portuguese are willing to pay more for fish enriched with
+											omega-3
+										</h6>
+									</a>
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											dsm-firmenich reports mycotoxin survey for first half 2023
+										</h6>
+									</a>
+								</div>
+
+								<a
+									href="#"
+									class="flex items-center gap-2 border-t border-t-[#7E7E7E] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+								>
+									<span>More Reports </span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="6"
+										height="10"
+										viewBox="0 0 6 10"
+										fill="none"
+									>
+										<path d="M1 9L5 5L1 1" stroke="black" />
+									</svg>
+								</a>
+							</div>
+							<!-- News Item -->
+							<div class="grid">
+								<hr class="border-[#101010]" />
+								<span class="mt-1 font-black text-[#101010]">
+									Featured Video
+								</span>
+
+								<img
+									src="./static/img/news-4.jpg"
+									alt="img"
+									class="mb-4 h-auto w-full max-w-full object-cover"
+								/>
+
+								<div class="grid gap-3">
+									<a
+										href="#"
+										class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+									>
+										<div class="mb-1">
+											<time class="text-sm text-[#7E7E7E]">
+												September 6, 2023
+											</time>
+										</div>
+										<h6>
+											AFIA working toward healthier world through advanced
+											animal nutrition
+										</h6>
+									</a>
+								</div>
+
+								<!-- ADS -->
+								<a
+									href="#"
+									class="flex flex-col justify-center border-t border-t-[#7E7E7E] pt-4"
+								>
+									<img
+										class="h-[100px] w-full rounded-sm object-cover"
+										src="./static/img/smaill-ads.jpg"
+										alt="ads"
+									/>
+									<span
+										class="mt-2 text-right font-inter text-xs uppercase tracking-[0.64px] text-[#595959]"
+										>Advertisement</span
+									>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 6 (Slider) -->
+				<section class="bg-[#F5F3E9] py-20 md:py-10">
+					<div class="container">
+						<hr class="border-[#101010]" />
+						<span class="mt-1 font-black text-[#101010]">Editor’s Picks</span>
+
+						<div class="swiper mt-4 pb-12">
+							<div class="swiper-wrapper pb-6">
+								<a href="#" class="swiper-slide group flex grow flex-col">
+									<img
+										src="./static/img/highlights-4.jpg"
+										alt="img"
+										class="mb-4 h-auto w-full max-w-full rounded-sm object-cover"
+									/>
+
+									<div class="mb-1">
+										<span class="text-sm text-secondary">Suppliers´ News</span>
+										<time class="text-sm text-[#7E7E7E]">
+											<span class="mx-1 text-[#7E7E7E]">|</span> September 7,
+											2023</time
+										>
+									</div>
+
+									<h4>STIM names new CEO</h4>
+									<p class="mt-3">
+										Jim-Roger Nordly passes the baton to Carl-Erik Arnesen, a
+										veteran in the Norwegian aquaculture industry.
+									</p>
+								</a>
+								<a href="#" class="swiper-slide group flex grow flex-col">
+									<img
+										src="./static/img/highlights-5.jpg"
+										alt="img"
+										class="mb-4 h-auto w-full max-w-full rounded-sm object-cover"
+									/>
+
+									<div class="mb-1">
+										<span class="text-sm text-secondary">Suppliers´ News</span>
+										<time class="text-sm text-[#7E7E7E]">
+											<span class="mx-1 text-[#7E7E7E]">|</span> September 7,
+											2023</time
+										>
+									</div>
+
+									<h4>
+										Corbion and partners invest in Dutch microalgae ingredient
+										producer
+									</h4>
+									<p class="mt-3">
+										Phycon produces innovative algae ingredients and enhances
+										specialty production in the feed industry through algae’s
+										functional properties.
+									</p>
+								</a>
+								<a href="#" class="swiper-slide group flex grow flex-col">
+									<img
+										src="./static/img/highlights-6.jpg"
+										alt="img"
+										class="mb-4 h-auto w-full max-w-full rounded-sm object-cover"
+									/>
+
+									<div class="mb-1">
+										<span class="text-sm text-secondary">Suppliers´ News</span>
+										<time class="text-sm text-[#7E7E7E]">
+											<span class="mx-1 text-[#7E7E7E]">|</span> September 7,
+											2023</time
+										>
+									</div>
+
+									<h4>F3 Krill Replacement Challenge: An insect digest</h4>
+									<p class="mt-3">
+										South Africa-based black soldier fly producer, Maltento, is
+										one of the registrants of the challenge with a
+										digest/palatant from black soldier fly larvae.
+									</p>
+								</a>
+								<a href="#" class="swiper-slide group flex grow flex-col">
+									<img
+										src="./static/img/highlights-4.jpg"
+										alt="img"
+										class="mb-4 h-auto w-full max-w-full rounded-sm object-cover"
+									/>
+
+									<div class="mb-1">
+										<span class="text-sm text-secondary">Suppliers´ News</span>
+										<time class="text-sm text-[#7E7E7E]">
+											<span class="mx-1 text-[#7E7E7E]">|</span> September 7,
+											2023</time
+										>
+									</div>
+
+									<h4>STIM names new CEO</h4>
+									<p class="mt-3">
+										Jim-Roger Nordly passes the baton to Carl-Erik Arnesen, a
+										veteran in the Norwegian aquaculture industry.
+									</p>
+								</a>
+								<a href="#" class="swiper-slide group flex grow flex-col">
+									<img
+										src="./static/img/highlights-5.jpg"
+										alt="img"
+										class="mb-4 h-auto w-full max-w-full rounded-sm object-cover"
+									/>
+
+									<div class="mb-1">
+										<span class="text-sm text-secondary">Suppliers´ News</span>
+										<time class="text-sm text-[#7E7E7E]">
+											<span class="mx-1 text-[#7E7E7E]">|</span> September 7,
+											2023</time
+										>
+									</div>
+
+									<h4>
+										Corbion and partners invest in Dutch microalgae ingredient
+										producer
+									</h4>
+									<p class="mt-3">
+										Phycon produces innovative algae ingredients and enhances
+										specialty production in the feed industry through algae’s
+										functional properties.
+									</p>
+								</a>
+								<a href="#" class="swiper-slide group flex grow flex-col">
+									<img
+										src="./static/img/highlights-6.jpg"
+										alt="img"
+										class="mb-4 h-auto w-full max-w-full rounded-sm object-cover"
+									/>
+
+									<div class="mb-1">
+										<span class="text-sm text-secondary">Suppliers´ News</span>
+										<time class="text-sm text-[#7E7E7E]">
+											<span class="mx-1 text-[#7E7E7E]">|</span> September 7,
+											2023</time
+										>
+									</div>
+
+									<h4>F3 Krill Replacement Challenge: An insect digest</h4>
+									<p class="mt-3">
+										South Africa-based black soldier fly producer, Maltento, is
+										one of the registrants of the challenge with a
+										digest/palatant from black soldier fly larvae.
+									</p>
+								</a>
+							</div>
+
+							<hr class="border-[#D9D9D9]" />
+							<!-- If we need pagination -->
+							<div class="swiper-pagination text-right"></div>
+						</div>
+						<!-- If we need navigation buttons -->
+						<div class="-mt-9 flex items-center gap-4">
+							<div
+								class="swiper-prev swiper-btn z-10 overflow-hidden rounded-full"
+							>
+								<svg
+									width="32"
+									height="32"
+									viewBox="0 0 32 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect
+										x="32"
+										y="32"
+										width="32"
+										height="32"
+										rx="16"
+										transform="rotate(-180 32 32)"
+										fill="#EE6C4D"
+									/>
+									<path d="M20 8L12 16L20 24" stroke="white" stroke-width="2" />
+								</svg>
+							</div>
+							<div
+								class="swiper-next swiper-btn z-10 overflow-hidden rounded-full"
+							>
+								<svg
+									width="32"
+									height="32"
+									viewBox="0 0 32 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="32" height="32" rx="16" fill="#EE6C4D" />
+									<path d="M12 24L20 16L12 8" stroke="white" stroke-width="2" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 7 (Tabs) -->
+				<section class="py-20 md:py-10">
+					<div class="container">
+						<hr class="border-[#101010]" />
+
+						<!-- [START] HTML Tabs -->
+						<div id="tabs" class="tabs">
+							<div
+								class="tabs-header flex items-center gap-10 md:flex-wrap md:justify-center md:gap-6"
+							>
+								<button class="tab-trigger active group">
+									<span
+										class="animate-fadeIn font-black text-primary transition-colors group-[.active]:border-t-[3px] group-[.active]:border-t-secondary"
+										>ASIA</span
+									>
+								</button>
+								<button class="tab-trigger group">
+									<span
+										class="animate-fadeIn font-black text-primary transition-colors group-[.active]:border-t-[3px] group-[.active]:border-t-secondary"
+										>LATIN AMERICA</span
+									>
+								</button>
+								<button class="tab-trigger group">
+									<span
+										class="animate-fadeIn font-black text-primary transition-colors group-[.active]:border-t-[3px] group-[.active]:border-t-secondary"
+										>EUROPE</span
+									>
+								</button>
+
+								<button class="tab-trigger group">
+									<span
+										class="animate-fadeIn font-black text-primary transition-colors group-[.active]:border-t-[3px] group-[.active]:border-t-secondary"
+										>OCEANIA</span
+									>
+								</button>
+								<button class="tab-trigger group">
+									<span
+										class="animate-fadeIn font-black text-primary transition-colors group-[.active]:border-t-[3px] group-[.active]:border-t-secondary"
+										>NORTH AMERICA</span
+									>
+								</button>
+								<button class="tab-trigger group">
+									<span
+										class="animate-fadeIn font-black text-primary transition-colors group-[.active]:border-t-[3px] group-[.active]:border-t-secondary"
+										>AFRICA</span
+									>
+								</button>
+							</div>
+
+							<div class="tabs-content mt-5">
+								<div class="tab-content animate-fadeIn">
+									<div class="flex gap-6 md:flex-col">
+										<div
+											class="flex items-center justify-center bg-[#F5F3E9] p-10"
+										>
+											<img
+												src="./static/img/asia.svg"
+												alt="asia"
+												class="h-auto w-full max-w-full"
+											/>
+										</div>
+										<div>
+											<div class="grid gap-3">
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Berg + Schmidt Animal Nutrition opens a new company
+														in Dubai
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Adisseo to build powder methionine plant in China
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Grobest introduces sustainable shrimp farming model
+														in Vietnam
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>US technology company to test SCPs in India</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														CP Foods partners for sustainable aquafeed raw
+														material supply chain in Thailand
+													</h3>
+												</a>
+											</div>
+											<a
+												href="#"
+												class="flex items-center gap-2 border-y border-y-[#7E7E7E] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+											>
+												<span>More Asia </span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="6"
+													height="10"
+													viewBox="0 0 6 10"
+													fill="none"
+												>
+													<path d="M1 9L5 5L1 1" stroke="black" />
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content animate-fadeIn">
+									<div class="flex gap-6 md:flex-col">
+										<div
+											class="flex items-center justify-center bg-[#F5F3E9] p-10"
+										>
+											<img
+												src="./static/img/SOUTH AMERICA.svg"
+												alt="asia"
+												class="h-auto w-full max-w-full"
+											/>
+										</div>
+										<div>
+											<div class="grid gap-3">
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Berg + Schmidt Animal Nutrition opens a new company
+														in Dubai
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Adisseo to build powder methionine plant in China
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Grobest introduces sustainable shrimp farming model
+														in Vietnam
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>US technology company to test SCPs in India</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														CP Foods partners for sustainable aquafeed raw
+														material supply chain in Thailand
+													</h3>
+												</a>
+											</div>
+											<a
+												href="#"
+												class="flex items-center gap-2 border-y border-y-[#7E7E7E] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+											>
+												<span>More Asia </span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="6"
+													height="10"
+													viewBox="0 0 6 10"
+													fill="none"
+												>
+													<path d="M1 9L5 5L1 1" stroke="black" />
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content animate-fadeIn">
+									<div class="flex gap-6 md:flex-col">
+										<div
+											class="flex items-center justify-center bg-[#F5F3E9] p-10"
+										>
+											<img
+												src="./static/img/EUROPE.svg"
+												alt="asia"
+												class="h-auto w-full max-w-full"
+											/>
+										</div>
+										<div>
+											<div class="grid gap-3">
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Berg + Schmidt Animal Nutrition opens a new company
+														in Dubai
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Adisseo to build powder methionine plant in China
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Grobest introduces sustainable shrimp farming model
+														in Vietnam
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>US technology company to test SCPs in India</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														CP Foods partners for sustainable aquafeed raw
+														material supply chain in Thailand
+													</h3>
+												</a>
+											</div>
+											<a
+												href="#"
+												class="flex items-center gap-2 border-y border-y-[#7E7E7E] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+											>
+												<span>More Asia </span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="6"
+													height="10"
+													viewBox="0 0 6 10"
+													fill="none"
+												>
+													<path d="M1 9L5 5L1 1" stroke="black" />
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content animate-fadeIn">
+									<div class="flex gap-6 md:flex-col">
+										<div
+											class="flex items-center justify-center bg-[#F5F3E9] p-10"
+										>
+											<img
+												src="./static/img/OCEANIA.svg"
+												alt="asia"
+												class="h-auto w-full max-w-full"
+											/>
+										</div>
+										<div>
+											<div class="grid gap-3">
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Berg + Schmidt Animal Nutrition opens a new company
+														in Dubai
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Adisseo to build powder methionine plant in China
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Grobest introduces sustainable shrimp farming model
+														in Vietnam
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>US technology company to test SCPs in India</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														CP Foods partners for sustainable aquafeed raw
+														material supply chain in Thailand
+													</h3>
+												</a>
+											</div>
+											<a
+												href="#"
+												class="flex items-center gap-2 border-y border-y-[#7E7E7E] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+											>
+												<span>More Asia </span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="6"
+													height="10"
+													viewBox="0 0 6 10"
+													fill="none"
+												>
+													<path d="M1 9L5 5L1 1" stroke="black" />
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content animate-fadeIn">
+									<div class="flex gap-6 md:flex-col">
+										<div
+											class="flex items-center justify-center bg-[#F5F3E9] p-10"
+										>
+											<img
+												src="./static/img/NORTH AMERICA.svg"
+												alt="asia"
+												class="h-auto w-full max-w-full"
+											/>
+										</div>
+										<div>
+											<div class="grid gap-3">
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Berg + Schmidt Animal Nutrition opens a new company
+														in Dubai
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Adisseo to build powder methionine plant in China
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Grobest introduces sustainable shrimp farming model
+														in Vietnam
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>US technology company to test SCPs in India</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														CP Foods partners for sustainable aquafeed raw
+														material supply chain in Thailand
+													</h3>
+												</a>
+											</div>
+											<a
+												href="#"
+												class="flex items-center gap-2 border-y border-y-[#7E7E7E] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+											>
+												<span>More AFRICA </span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="6"
+													height="10"
+													viewBox="0 0 6 10"
+													fill="none"
+												>
+													<path d="M1 9L5 5L1 1" stroke="black" />
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-content animate-fadeIn">
+									<div class="flex gap-6 md:flex-col">
+										<div
+											class="flex items-center justify-center bg-[#F5F3E9] p-10"
+										>
+											<img
+												src="./static/img/AFRICA.svg"
+												alt="asia"
+												class="h-auto w-full max-w-full"
+											/>
+										</div>
+										<div>
+											<div class="grid gap-3">
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Berg + Schmidt Animal Nutrition opens a new company
+														in Dubai
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Adisseo to build powder methionine plant in China
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														Grobest introduces sustainable shrimp farming model
+														in Vietnam
+													</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>US technology company to test SCPs in India</h3>
+												</a>
+												<a
+													href="#"
+													class="group border-b border-b-[#D9D9D9] pb-[10px] last:border-none"
+												>
+													<div class="mb-1">
+														<time class="text-sm text-[#7E7E7E]">
+															September 6, 2023
+														</time>
+													</div>
+													<h3>
+														CP Foods partners for sustainable aquafeed raw
+														material supply chain in Thailand
+													</h3>
+												</a>
+											</div>
+											<a
+												href="#"
+												class="flex items-center gap-2 border-y border-y-[#7E7E7E] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+											>
+												<span>More AFRICA </span>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="6"
+													height="10"
+													viewBox="0 0 6 10"
+													fill="none"
+												>
+													<path d="M1 9L5 5L1 1" stroke="black" />
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- [END] HTML Tabs -->
+					</div>
+				</section>
+
+				<!-- Section 8 (Products) -->
+				<section>
+					<div class="container">
+						<hr class="border-[#101010]" />
+						<span class="mt-1 font-black text-[#101010]">New Products</span>
+
+						<div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-1">
+							<div>
+								<div class="flex grow flex-col gap-[10px]">
+									<a
+										href="#"
+										class="group grid grid-cols-4 gap-6 border-b border-b-[#D9D9D9] pb-[10px] last:border-none md:grid-cols-1"
+									>
+										<div class="col-span-3 md:order-2 md:col-span-1">
+											<div class="mb-1">
+												<time class="text-sm text-[#7E7E7E]">
+													September 6, 2023</time
+												>
+											</div>
+											<h3>Phodé reinforces its range of aquafeed additives</h3>
+											<p class="mt-4">
+												The company added three new products to its range of
+												aquaculture products to support animal welfare and
+												performance in aquaculture.
+											</p>
+										</div>
+										<div class="flex">
+											<img
+												src="./static/img//product-1.jpg"
+												alt="img"
+												class="h-auto w-full max-w-full rounded-sm object-cover"
+											/>
+										</div>
+									</a>
+									<a
+										href="#"
+										class="group grid grid-cols-4 gap-6 border-b border-b-[#D9D9D9] pb-[10px] last:border-none md:grid-cols-1"
+									>
+										<div class="col-span-3 md:order-2 md:col-span-1">
+											<div class="mb-1">
+												<time class="text-sm text-[#7E7E7E]">
+													September 6, 2023</time
+												>
+											</div>
+											<h3>
+												September 6, 2023 Suppliers´ News Bühler develops new
+												generation of grain cleaners
+											</h3>
+											<p class="mt-4">
+												The TAS cleaning system has been updated with a range of
+												new features, including a remote control for the machine
+												settings.
+											</p>
+										</div>
+										<div class="flex">
+											<img
+												src="./static/img/product-2.jpg"
+												alt="img"
+												class="h-auto w-full max-w-full rounded-sm object-cover"
+											/>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div
+								class="border-l border-l-[#D9D9D9] pl-3 sm:border-none sm:pl-0"
+							>
+								<div class="flex grow flex-col gap-[10px]">
+									<a
+										href="#"
+										class="group grid grid-cols-4 gap-6 border-b border-b-[#D9D9D9] pb-[10px] last:border-none md:grid-cols-1"
+									>
+										<div class="col-span-3 md:order-2 md:col-span-1">
+											<div class="mb-1">
+												<time class="text-sm text-[#7E7E7E]">
+													September 6, 2023</time
+												>
+											</div>
+											<h3>
+												Kemin AquaScience unveils feed additive to support
+												shrimp health in Asian countries
+											</h3>
+											<p class="mt-4">
+												A phytogenic-based feed additive reduces the impact of
+												parasitic infection and promotes hepatopancreatic health
+												in shrimp.
+											</p>
+										</div>
+										<div class="flex">
+											<img
+												src="./static/img/product-3.jpg"
+												alt="img"
+												class="h-auto w-full max-w-full rounded-sm object-cover"
+											/>
+										</div>
+									</a>
+									<a
+										href="#"
+										class="group grid grid-cols-4 gap-6 border-b border-b-[#D9D9D9] pb-[10px] last:border-none md:grid-cols-1"
+									>
+										<div class="col-span-3 md:order-2 md:col-span-1">
+											<div class="mb-1">
+												<time class="text-sm text-[#7E7E7E]">
+													September 6, 2023</time
+												>
+											</div>
+											<h3>Whisky byproducts turn into omega-3 product</h3>
+											<p class="mt-4">
+												MiAlgae has launched an omega-3 dry powder with a high
+												concentration of DHA and other oils which can be added
+												to aquafeed recipes.
+											</p>
+										</div>
+										<div class="flex">
+											<img
+												src="./static/img/product-4.jpg"
+												alt="img"
+												class="h-auto w-full max-w-full rounded-sm object-cover"
+											/>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a
+							href="#"
+							class="mt-6 flex items-center justify-center gap-2 border-y border-y-[#D9D9D9] py-[10px] font-bold text-black transition-colors hover:text-secondary"
+						>
+							<span>More New Products </span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="6"
+								height="10"
+								viewBox="0 0 6 10"
+								fill="none"
+							>
+								<path d="M1 9L5 5L1 1" stroke="black" />
+							</svg>
+						</a>
+					</div>
+				</section>
+			</main>
+
+			<!-- Footer -->
+			<footer class="mt-20 bg-primary md:mt-10">
+				<div class="container">
+					<div class="flex justify-between gap-10 py-28 md:py-10 sm:flex-col">
+						<div class="flex flex-col gap-7">
+							<img
+								src="./static/img/logo.svg"
+								alt="logo"
+								class="sm:max-w-[160px]"
+							/>
+							<ul class="flex flex-col gap-[2px]">
+								<li>
+									<a
+										class="leading-loose text-white transition-colors hover:text-secondary"
+										href="#"
+										>Magazine</a
+									>
+								</li>
+								<li>
+									<a
+										class="leading-loose text-white transition-colors hover:text-secondary"
+										href="#"
+										>Advertise</a
+									>
+								</li>
+								<li>
+									<a
+										class="leading-loose text-white transition-colors hover:text-secondary"
+										href="#"
+										>Contact us</a
+									>
+								</li>
+							</ul>
+
+							<ul class="flex items-center gap-8">
+								<li>
+									<a href="#" class="group"
+										><svg
+											class="transition-transform group-hover:scale-110"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M19.6594 19.6584H16.4342V14.61C16.4342 13.4065 16.4125 11.8586 14.757 11.8586C13.0797 11.8586 12.8235 13.1709 12.8235 14.5242V19.6584H9.60072V9.27883H12.6918V10.6974H12.7365C13.1679 9.88179 14.2192 9.02146 15.7889 9.02146C19.0565 9.02146 19.6594 11.1699 19.6594 13.966V19.6584ZM5.96344 7.86146C4.92663 7.86146 4.09041 7.02288 4.09041 5.98975C4.09041 4.95783 4.92663 4.11925 5.96344 4.11925C6.9942 4.11925 7.83283 4.95783 7.83283 5.98975C7.83283 7.02288 6.9942 7.86146 5.96344 7.86146ZM4.3466 19.6584H7.57665V9.27883H4.3466V19.6584ZM21.2654 1.125H2.72855C1.844 1.125 1.125 1.82704 1.125 2.69342V21.3054C1.125 22.1718 1.844 22.875 2.72855 22.875H21.2654C22.1524 22.875 22.875 22.1718 22.875 21.3054V2.69342C22.875 1.82704 22.1524 1.125 21.2654 1.125Z"
+												fill="#CCEDFF"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="group"
+										><svg
+											class="transition-transform group-hover:scale-110"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M21.675 1.125H2.325C1.66226 1.125 1.125 1.66226 1.125 2.325V21.675C1.125 22.3377 1.66226 22.875 2.325 22.875H12.75V14.4637H9.91875V11.1713H12.75V8.74875C12.75 5.94 14.4675 4.41 16.9725 4.41C17.8167 4.40816 18.6603 4.45072 19.5 4.5375V7.47375H17.775C16.41 7.47375 16.1437 8.11875 16.1437 9.07125V11.1675H19.4062L18.9825 14.46H16.125V22.875H21.675C22.3377 22.875 22.875 22.3377 22.875 21.675V2.325C22.875 1.66226 22.3377 1.125 21.675 1.125Z"
+												fill="#CCEDFF"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="group"
+										><svg
+											class="transition-transform group-hover:scale-110"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M7.67842 21.5382C16.4518 21.5382 21.2526 14.2627 21.2526 7.96409C21.2526 7.75941 21.2526 7.55472 21.2432 7.35004C22.1736 6.68018 22.983 5.83354 23.625 4.87525C22.7691 5.25671 21.848 5.50791 20.8804 5.62885C21.8666 5.04272 22.6202 4.10304 22.983 2.9866C22.062 3.53552 21.0386 3.92627 19.95 4.14026C19.0755 3.20989 17.8381 2.63306 16.4704 2.63306C13.8375 2.63306 11.6976 4.77291 11.6976 7.40587C11.6976 7.77801 11.7441 8.14086 11.8186 8.4944C7.85519 8.29902 4.33839 6.39176 1.98454 3.50761C1.57518 4.21469 1.34259 5.03342 1.34259 5.90797C1.34259 7.56403 2.18923 9.02471 3.46384 9.88066C2.68232 9.85274 1.94733 9.63876 1.30537 9.28522C1.30537 9.30382 1.30537 9.32243 1.30537 9.35034C1.30537 11.6577 2.95213 13.5928 5.1292 14.0301C4.72914 14.1418 4.31047 14.1976 3.8732 14.1976C3.56618 14.1976 3.26846 14.1697 2.98004 14.1138C3.58478 16.0118 5.35249 17.3888 7.43652 17.426C5.79907 18.7099 3.74295 19.4728 1.51005 19.4728C1.1286 19.4728 0.747149 19.4542 0.375 19.4077C2.47764 20.7474 4.98965 21.5382 7.67842 21.5382Z"
+												fill="#CCEDFF"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="group"
+										><svg
+											class="transition-transform group-hover:scale-110"
+											width="26"
+											height="18"
+											viewBox="0 0 26 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_156_11797)">
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M25.3702 5.29731C25.392 5.59658 25.4073 5.89804 25.4182 6.19949L25.416 6.19513C25.4423 6.94155 25.4369 7.68798 25.4314 8.43363C25.4292 8.74198 25.427 9.0502 25.427 9.35823C25.4276 9.57664 25.4294 9.79531 25.4311 10.0141C25.4408 11.2244 25.4505 12.4391 25.2784 13.6398C25.0753 15.0662 24.6777 16.709 23.1617 17.2267C21.4569 17.8091 19.6351 17.8453 17.8515 17.8808C17.7953 17.882 17.7391 17.8831 17.683 17.8842C17.0732 17.8963 16.4634 17.9105 15.8536 17.9247C13.8201 17.972 11.7863 18.0193 9.75122 17.9891C9.45855 17.985 9.16575 17.9825 8.87292 17.9799C7.90466 17.9716 6.936 17.9632 5.96991 17.8995C4.78156 17.823 3.43812 17.7226 2.32622 17.2704C0.242244 16.4228 0.126467 13.9085 0.0500111 11.9796C-0.00896951 10.4942 -0.00460058 9.00435 0.00413729 7.51673C0.00508013 7.33759 0.00487844 7.15496 0.0046739 6.96975C0.00298286 5.43853 0.00109672 3.73066 0.644186 2.35483C1.4437 0.635659 3.21312 0.384446 4.93448 0.249009C6.3369 0.137601 7.74152 0.104834 9.14613 0.0742516C11.8811 0.0130865 14.6182 -0.0480785 17.351 0.0567758C18.701 0.109203 20.0488 0.200951 21.3922 0.351679C22.4517 0.471824 23.568 0.668426 24.2888 1.54221C25.1299 2.56236 25.2719 4.02158 25.3702 5.29731ZM10.1403 5.10287C12.3335 6.39171 14.5048 7.66744 16.7264 8.97156C15.3989 9.75262 14.0855 10.5243 12.7721 11.2959C11.8962 11.8105 11.0204 12.3251 10.1403 12.8424V5.10287Z"
+													fill="#CCEDFF"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_156_11797">
+													<rect width="25.4381" height="18" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="max-w-[240px]">
+							<h3 class="text-white">Suscribe to aquafeed.com</h3>
+							<p class="mt-3 text-[#E5F6FF]">
+								Stay up to date on the latest news and developments on
+								aquafeeds. It's a free subscription!
+							</p>
+
+							<a
+								href="#"
+								class="mt-6 flex items-center gap-3 font-bold text-white hover:text-secondary"
+							>
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M12 1C18.075 1 23 5.925 23 12C23 18.075 18.075 23 12 23C5.925 23 1 18.075 1 12C1 5.925 5.925 1 12 1ZM12.142 5.5L11.134 6.562C14.464 9.838 15.328 10.702 15.742 11.062C14.14 11.044 12.574 11.044 5.5 11.044V12.628C12.574 12.628 14.23 12.628 15.742 12.61C15.31 12.97 14.428 13.816 11.134 17.146L12.142 18.19L18.496 11.836L12.142 5.5Z"
+										fill="#CCEDFF"
+									/>
+								</svg>
+
+								<span>Suscribe to our newsletter</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-[#3D5A80] py-4">
+					<div class="container">
+						<div
+							class="flex justify-between gap-10 sm:flex-col sm:items-center sm:gap-4"
+						>
+							<p class="text-sm font-bold text-[#CCEDFF] sm:text-center">
+								© 1998-2023 Copywright AquafeedMedia. All Rights reserved
+							</p>
+							<ul class="flex items-center gap-6">
+								<li>
+									<a
+										class="flex text-center text-sm text-[#CCEDFF] hover:text-secondary"
+										href="#"
+										>Privacy Policy</a
+									>
+								</li>
+								<li>
+									<a
+										class="flex text-center text-sm text-[#CCEDFF] hover:text-secondary"
+										href="#"
+										>Terms of Service</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<!-- Cookie msg -->
+			<div
+				id="cookie"
+				class="fixed bottom-4 left-4 right-4 z-10 hidden animate-fadeIn bg-secondary py-6"
+			>
+				<div class="container">
+					<h6 class="font-black text-white">How we use cookies</h6>
+					<p class="mt-2 text-white">
+						In order to give you the best experience, we use cookies and similar
+						technologies to help our site function, and for advertising and
+						marketing. Want to know more? Read our
+						<a href="#" class="underline">cookie policy</a>, or select manage to
+						update your preferences.
+					</p>
+
+					<div class="mt-6 flex items-center gap-2">
+						<button
+							class="flex w-[120px] items-center justify-center rounded-sm border border-white py-[10px] px-8 leading-none text-white transition-colors hover:bg-white hover:text-secondary"
+						>
+							Manage
+						</button>
+						<button
+							id="close-cookie"
+							class="flex w-[120px] items-center justify-center rounded-sm border border-white bg-white py-[10px] px-8 leading-none text-secondary hover:border-white/75 hover:bg-white/75"
+						>
+							OK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Libs -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+		<!-- Main JS -->
+		<script src="./static/js/main.js"></script>
+	</body>
+</html>
